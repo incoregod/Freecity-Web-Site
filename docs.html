@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+    <title>FreeCity Development</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar">
+      <div class="container flex">
+        <a href="index.html"><img class="logo-img" src="/images/fc-development.png" alt=""/></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="docs.html">Documentation</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- main -->
+    <div class="documents bg-primary">
+      <div class="container grid">
+        <div class="showcase-text">
+          <h1>Documentation</h1>
+          <p>All info your need to install our products</p>
+        </div>
+        <img src="/images/docs.png" alt="">
+      </div>
+    </div>
+
+    <!-- docs -->
+    <section class="docs-main my-4">
+      <div class="container grid">
+        <div class="card p-3">
+          <h3 class="my-2">FreeCity Books</h3>
+          <nav>
+            <ul>
+              <li id="bookInstall" class="modal-handle "><a href="#"> Instalation</a></li>
+              <li id="bookFeature" class="modal-handle "><a href="#"> Features</a></li>
+              <li id="bookOtherinfo" class="modal-handle "><a href="#"> Other Info</a></li>
+            </ul>
+          </nav>
+          <h3 class="my-2">FreeCity CaptureTheFlag</h3>
+          <nav>
+            <ul>
+              <li id="captInstall" class="modal-handle "><a href="#"> Instalation</a></li>
+              <li id="captFeature" class="modal-handle "><a href="#"> Features</a></li>
+              <li id="captOtherinfo" class="modal-handle "><a href="#"> Other Info</a></li>
+            </ul>
+          </nav>
+          <h3 class="my-2">FreeCity Paintball</h3>
+          <nav>
+            <ul>
+              <li id="paintballInstall" class="modal-handle "><a href="#"> Instalation</a></li>
+              <li id="paintballFeature" class="modal-handle "><a href="#"> Features</a></li>
+              <li id="paintballOtherinfo" class="modal-handle "><a href="#"> Other Info</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="card introduction modal active">
+          <h2>Introduction</h2>
+          <p>Be sure to check our documentation before you start our products to ensure that's all 100% correctly installed. If you require any assyst after read our documentation, contact support in our Discord channel.  </p>
+          <a  href="https://discord.com/invite/xnA2FJWTRk" target="_blank"
+            ><i class="fa-brands fa-discord fa-3x"></i
+          ></a>
+        </div>
+        <div class="card bookInstall modal">
+          <h2>Books Instalation</h2>
+          <h1 class="text-center">ESX Framework</h1>
+          <h3>Creating Books:</h3>
+          <ul class="li-style">
+            <li>Create your book items on your Database items table;</li>
+            <li>Add to shared.lua file in Config.Items the respective Books</li>
+            <img src="/images/configitems.jpg" alt="">
+            <li>The name in [ ] must match your items table item and image name</li>
+            <li>Create your book Covers and pages by designing them using for example photoshop or other software. Check the example we made</li>
+            <img src="/images/guide1.jpg" alt="">
+            <li>Put your created images inside of html/pages folder with the name of book item plus the page number Example:guide1(page1) guide2(page2)</li>
+            <li>You can add as many books and pages as you want</li>
+            <li>Last... make sure that if you're running a default framework that you edit the triggers</li>
+          </ul>
+          <h1 class="text-center">QB-CORE Framework</h1>
+          <h3>Creating Books:</h3>
+          <ul class="li-style">
+            <li>Create your book items on your items.lua file</li>
+            <li>Add to shared.lua file in Config.Items the respective Books</li>
+            <img src="/images/configitems.jpg" alt="">
+            <li>The name in [ ] must match your items table item and image name</li>
+            <li>Create your book Covers and pages by designing them using for example photoshop or other software. Check the example we made</li>
+            <img src="/images/guide1.jpg" alt="">
+            <li>Put your created images inside of html/pages folder with the name of book item plus the page number Example:guide1(page1) guide2(page2)</li>
+            <li>You can add as many books and pages as you want</li>
+            <li>Last... make sure that if you're running a default framework that you edit the triggers</li>
+          </ul>
+        </div>
+        <div class="card bookFeature modal">
+          <h2>Books Features</h2>
+          <h3>With our script your imagination is the limit. So... what you can do?</h3>
+          <ul class="li-style">
+            <li>Create as many books as you want</li>
+            <li>High Optimization : 0.00 ms Idle | 0.00 ms Open</li>
+            <img class="perf-img" src="https://dunb17ur4ymx4.cloudfront.net/wysiwyg/924204/d2537145be8ee3a0305c4f40d7512b8d69362e5b.png" alt=""> 
+            <img class="perf-img" src="https://dunb17ur4ymx4.cloudfront.net/wysiwyg/924204/6cc6918ac7f92bcef8a0f20449af5e0896806ca9.png" alt="">
+            <li>For each book created you can add as many pages as you want</li>
+            <li>Give your players a book sensation and new oportunities to pass information during the game in the most varied activities. Check our preview</li>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CHE7LeTYfiU" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+            <h3>Check out some books created from our customers</h3>
+            <div class="grid">
+              <img src="/images/book2.jpg" alt="">
+              <img src="/images/book1.jpg" alt="">
+              <img src="/images/book3.jpg" alt="">
+            </div>
+          </ul>
+          <a  href="https://store.freecityrp.pt/package/5219666" target="_blank" class="btn btn-primary bg-1 ">Buy ESX</a>
+          <a href="https://store.freecityrp.pt/package/5219677" target="_blank" class="btn btn-primary bg-1 ">Buy QBCORE</a>
+        </div>
+        <div class="card bookOtherinfo modal">
+          <h2>Books</h2>
+          <p>If you need any other type of info or support, feel free to drop by our Discord and contact us</p>
+          <a href="https://discord.com/invite/xnA2FJWTRk" target="_blank"
+            ><i class="fa-brands fa-discord fa-3x"></i
+          ></a></p>
+        </div>
+        <!-- cpaturetheflag -->
+        <div class="card captInstall modal">
+          <h2>Capture the Flag Instalation</h2>
+          <h1 class="text-center">ESX & QB-CORE Framework</h1>
+          <h5>This resource uses escrow Fivem protection. All needed modifications can be made on shared-server / shared-client and shared.lua</h5>
+          <p>We recomend the use of polyzones, but our script is full compatible without them</p>
+          <h3>Dependencys:</h3>
+          <ul class="li-style">
+            <li>Gamebuild >= 2372 If you want to run our pre-configured map: TunnerMeetup</li>
+          </ul>
+          <h3>Instalation:</h3>
+          <ul class="li-style">
+            <li>Please take a look at the file shared.lua and take the following steps in order to get this script up and running</li>
+            <li>Add your revive triggerEvent in order to revive players. Config.ReviveEvent = 'esx_ambulancejob:revive'</li>
+            <h3>Targeting system or Blip system, your choice</h3>
+            <li>Decide if you want to use a targeting system or a blip system using the vars:
+              <p>Config.spawnMarker</p>
+              <p>Config.useTargetSystem</p>
+            </li>
+            <li>Choose if you want to spawn a ped at the startLocation (if using targeting system it's mandatory)</li>
+            <h3>Clothes, Maps & GameWeapons</h3>
+            <li>Configure the clothes, that the players will be able to choose when in lobby</li>
+            <li>All Clothes must be created in shared.lua file following the examples already created there.</li>
+            <li>Configure the Maps and GameWeapons the HostLobby Leader will choose from</li>
+            <li>All Maps and GameWeapons must be created in shared.lua file following the examples already created there.</li>
+            <li>Create the blue team spawn, the red team spawn, and the center of the map for each map you create</li>
+            <h3>Adding images</h3>
+            <li>To add the image of the map,  just add the image to the folder /img with the same name as the key of the map. (/img/miningyard.jpg) (add jpg files only)</li>
+            <li>To add the cloth images, just create your cloth and take a photo, then upload it like the others already on /img/clothes the image size should be 296 x 407 pixels</li>
+          </ul>
+        </div>
+        <div class="card captFeature modal">
+          <h2>Capture the Flag Features</h2>
+          <h3>Improve your server with our unique deathmatch mode and create fun events for your community to enjoy.</h3>
+          <iframe class="vid" width="560" height="315" src="https://www.youtube.com/embed/x1U0ZpSToBA" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+          <ul class="li-style">
+            <li>High Optimization : 0.00 ms Idle | 0.01 ms During the game.</li>
+            <img class="perf-img" src="/images/perf1capt.jpg" alt=""> 
+            <img class="perf-img" src="/images/perf2capt.jpg" alt="">
+            <li>Scoreboard with Redteam score and Blueteam score displayed during the game.</li>
+            <li>Flag synced to players</li>
+            <li>Add your country Flag or other to the game on shared.lua.</li>
+            <li>Each Team can have up to 10 players, supporting up to 10 vs 10 Game in a deathmatch mode.</li>
+            <li>You can start a match with at Least 1 player in each team</li>
+            <li>When a team gets the pre-defined score (shared.lua), that team wins the game.</li>
+            <li>Timer with countdown during the game</li>
+            <li>If Timer runs out then the team with More score wins the game, if both scores are the same a draw will be called</li>
+            <img class="perf-img" src="/images/timer.jpg" alt="">
+            <li>If a player picks the flag and dies, the flag will be dropped on playerdeath location and can be picked by other players, a new position of the flag will be shown on minimap. The player will respawn and can keep playing.</li>
+            <li>When a team delivers the flag on theyr base, will score a point and the flag will return to the original location</li>
+            <img class="capt-img" src="/images/map.jpg" alt="">
+            <li>Ready for QB-Target, Qtarget, bt-target, you can disable it if want the blip system</li>
+            <li>Add / remove / change maps</li>
+            <li>3 maps Ready : Officeroom / Miningyard / Driftunderground</li>
+            <li>Add or remove all weapons you want to be available on Game.</li>
+            <li>First person joining the lobby will be the host</li>
+            <li>The host can choose on UI the Map and the Weapon for that game.</li>
+            <li>Only the host can start the game</li>
+            <li>The host have time to start the game, if not the party will be disbanded</li>
+            <li>If the host leave the pre-game a new host will be defined</li>
+            <li>Option to close ui and still on teams</li>
+            <li>Option to change teams while the game not started</li>
+            <li>Option to leave game if the game not started</li>
+            <li>Weapon is given to the players on game start and removed when the games end</li>
+            <li>On game start all players inventory gets cleared and given back on game end</li>
+            <li>Option to use the command leavearena, to leave the game while active, weapon got removed and inventory returned to the player</li>
+            <li>Add your custom clothing on config</li>
+            <li>Each player player team can choose the outfit to play on the game from each team. You can add and customize as many as you want</li>
+            <li>Players will be equiped with selected cloth setup when the game starts and back on they’r clothes when game finishes</li>
+          </ul>
+          <a  href="https://store.freecityrp.pt/package/5217434" target="_blank" class="btn btn-primary bg-1 ">Buy ESX</a>
+          <a href="https://store.freecityrp.pt/package/5217437" target="_blank" class="btn btn-primary bg-1 ">Buy QBCORE</a>
+        </div>
+        <div class="card captOtherinfo modal">
+          <h2>Capture The Flag</h2>
+          <p>If you need any other type of info or support, feel free to drop by our Discord and contact us</p>
+          <a href="https://discord.com/invite/xnA2FJWTRk" target="_blank"
+            ><i class="fa-brands fa-discord fa-3x"></i
+          ></a></p>
+        </div>
+        <!-- paintball -->
+        <div class="card paintballInstall modal">
+          <h2>Paintball Instalation</h2>
+          <h1 class="text-center">ESX Framework</h1>
+          <ul class="li-style">
+            <h5>This resource uses escrow Fivem protection. All needed modifications can be made on shared-server / shared-client and shared.lua</h5>
+            <p>We recomend the use of polyzones, but our script is full compatible without them</p>
+            <h3>Installing GameWeapon:</h3>
+            <li>Extract the folder Paintball and ensure it with the freecity_paintball folder on your server.cfg</li>
+            <li>Add the GameWeapon to your items table in SQL and to Weapons.lua file</li>
+            <p>Make sure when you start the script the NPC Ped is having the paintgun on his hands. If so the GameWeapon is correctly installed.</p>
+            <h3>Triggers and Shared.lua configuration</h3>
+            <li>Make sure to get the correct triggers accordingly to your framework</li>
+            <li>Choose to use from target system or blip system using the vars:
+              <li>Config.spawnMarker</li>
+              <li>Coonfig.useTargetSystem</li>
+            </li>
+            <li>Make sure to check if Config.WeaponAsItem is set to false if you arent using weapons as items.</li>
+            <h3>Clothes & Maps</h3>
+            <li>Configure the clothes that the players will get when spawning in shared.lua by following our already created examples</li>
+            <li>To create new maps/zones to fight just copy one of the maps created and follow the lines adding the blue team spawn, the red team spawn, and the center of the map</li>
+            <li>If you arent running Polyzones make sure to set the map range accordingly to your map size to make sure the leavecmd works.</li>
+            <li>To add the image of the map,  just add the image to the folder /img with the same name as the key of the map. (/img/miningyard.jpg) (add jpg files only)</li>
+          </ul>
+          <h1 class="text-center">QB-CORE Framework</h1>
+          <h3>Installing GameWeapon:</h3>
+          <ul class="li-style">
+            <li>Extract the folder Paintball and ensure it with the freecity_paintball folder on your server.cfg</li>
+            <li>Add the GameWeapon to your items.lua & weapons.lua files</li>
+            <p>Make sure when you start the script the NPC Ped is having the paintgun on his hands. If so the GameWeapon is correctly installed.</p>
+            <h3>Triggers and Shared.lua configuration</h3>
+            <li>Make sure to get the correct triggers accordingly to your framework</li>
+            <li>Choose to use from target system or blip system using the vars:
+              <li>Config.spawnMarker</li>
+              <li>Coonfig.useTargetSystem</li>
+            </li>
+            <h3>Clothes & Maps</h3>
+            <li>Configure the clothes that the players will get when spawning in shared.lua by following our already created examples</li>
+            <li>To create new maps/zones to fight just copy one of the maps created and follow the lines adding the blue team spawn, the red team spawn, and the center of the map</li>
+            <li>If you arent running Polyzones make sure to set the map range accordingly to your map size to make sure the leavecmd works.</li>
+            <li>To add the image of the map,  just add the image to the folder /img with the same name as the key of the map. (/img/miningyard.jpg) (add jpg files only)</li>
+          </ul>
+        </div>
+        <div class="card paintballFeature modal">
+          <h2>Paintball Features</h2>
+          <h3>Simulation of real life paintball game. Create awesome events for your community enjoy</h3>
+          <iframe class="vid" width="560" height="315" src="https://www.youtube.com/embed/CnCfduRgZU4" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+          <ul class="li-style">
+            <li>High Optimization : 0.00 ms Idle | 0.00 ms During the game.</li>
+            <li>Ready for Qtarget or Qbtarget, you can disable it if want the blip system</li>
+            <li>Add / remove / change maps</li>
+            <li>3 maps Ready : Officeroom / Miningyard / Driftunderground</li>
+            <li>Really nice UI to handle the game preparation & player joins</li>
+            <li>First person joining the lobby will be the host</li>
+            <li>The host can choose on UI the map to play on that game</li>
+            <li>Only the host can start the game</li>
+            <li>You can only start game when both teams have players</li>
+            <li>Option to close ui and still on teams</li>
+            <li>Option to change teams while the game not started</li>
+            <li>Weapon is given to the players on game start and removed when the player gets hit</li>
+            <li>Random spawns on game start</li>
+            <li>Add your custom clothing on config</li>
+            <li>Players will be equiped with your cloth setup when the game starts and back on they'r clothes when game finishes</li>
+            <li>Life system, players will have 3 lifes per game, only getting tped out of game after the lifes goes out</li>
+          </ul>
+          <a  href="https://store.freecityrp.pt/package/5035293" target="_blank" class="btn btn-primary bg-1 ">Buy ESX</a>
+          <a href="https://store.freecityrp.pt/package/5036033" target="_blank" class="btn btn-primary bg-1 ">Buy QBCORE</a>
+        </div>
+        <div class="card paintballOtherinfo modal">
+          <h2>PaintBall</h2>
+          <p>If you need any other type of info or support, feel free to drop by our Discord and contact us</p>
+          <a href="https://discord.com/invite/xnA2FJWTRk" target="_blank"
+            ><i class="fa-brands fa-discord fa-3x"></i
+          ></a></p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <!-- Footer -->
+    <div class="footer bg-primary">
+      <h2 class="lg text-center">Connect with us</h2>
+      <div class="container grid">
+        <div class="text-center">
+          <p class="lead my-1">Join our discord community</p>
+          <a href="https://discord.com/invite/xnA2FJWTRk" target="_blank"
+            ><i class="fa-brands fa-discord fa-3x"></i
+          ></a>
+          <p class="lead my-1">Join our Youtube channel</p>
+          <a href="https://discord.com/invite/xnA2FJWTRk" target="_blank"
+            ><i class="fa-brands fa-youtube fa-3x"></i
+          ></a>
+        </div>
+        <img src="/images/fc-development.png" alt="img" />
+      </div>
+      <div class="copyright"></div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
